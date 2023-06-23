@@ -26,21 +26,228 @@ public class dlgReciboElectricidad extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        txtFecha = new javax.swing.JTextField();
+        txtNumRecibo = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
+        txtDomicilio = new javax.swing.JTextField();
+        txtConsumido = new javax.swing.JTextField();
+        txtCosto = new javax.swing.JTextField();
+        comboTipo = new javax.swing.JComboBox<>();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        labelTPagar = new javax.swing.JLabel();
+        labelSubtotal = new javax.swing.JLabel();
+        labelImpuesto = new javax.swing.JLabel();
+        btnCancelar = new javax.swing.JButton();
+        btnNuevo = new javax.swing.JButton();
+        btnGuardar = new javax.swing.JButton();
+        btnMostrar = new javax.swing.JButton();
+        btnCerrar = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
+
+        jLabel1.setText("Nombre");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(20, 60, 44, 16);
+
+        jLabel2.setText("Num. Recibo");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(20, 30, 69, 16);
+
+        jLabel3.setText("kilowatts consumido");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(20, 170, 120, 16);
+
+        jLabel4.setText("Domicilio");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(20, 100, 51, 16);
+
+        jLabel5.setText("Tipo de Servicio");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(20, 130, 83, 16);
+
+        jLabel6.setText("Costo por kilowatts");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(240, 130, 110, 16);
+
+        jLabel7.setText("Fecha");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(240, 30, 31, 16);
+
+        txtFecha.setEnabled(false);
+        txtFecha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFechaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtFecha);
+        txtFecha.setBounds(280, 30, 71, 22);
+
+        txtNumRecibo.setEnabled(false);
+        txtNumRecibo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNumReciboActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtNumRecibo);
+        txtNumRecibo.setBounds(100, 30, 71, 22);
+
+        txtNombre.setEnabled(false);
+        txtNombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNombreActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtNombre);
+        txtNombre.setBounds(80, 60, 150, 22);
+
+        txtDomicilio.setEnabled(false);
+        txtDomicilio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDomicilioActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtDomicilio);
+        txtDomicilio.setBounds(80, 100, 150, 22);
+
+        txtConsumido.setEnabled(false);
+        txtConsumido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtConsumidoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtConsumido);
+        txtConsumido.setBounds(140, 170, 71, 22);
+
+        txtCosto.setEnabled(false);
+        txtCosto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCostoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtCosto);
+        txtCosto.setBounds(350, 130, 71, 22);
+
+        comboTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        comboTipo.setEnabled(false);
+        getContentPane().add(comboTipo);
+        comboTipo.setBounds(110, 130, 120, 22);
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "CALCULOS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 1, 14))); // NOI18N
+        jPanel1.setLayout(null);
+
+        jLabel8.setText("Total a pagar");
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(30, 90, 68, 16);
+
+        jLabel9.setText("Subtotal");
+        jPanel1.add(jLabel9);
+        jLabel9.setBounds(30, 30, 44, 16);
+
+        jLabel10.setText("Impuesto");
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(30, 60, 50, 16);
+        jPanel1.add(jLabel11);
+        jLabel11.setBounds(160, 90, 100, 0);
+        jPanel1.add(jLabel12);
+        jLabel12.setBounds(160, 30, 120, 0);
+
+        jLabel14.setText("$");
+        jPanel1.add(jLabel14);
+        jLabel14.setBounds(120, 60, 37, 16);
+
+        jLabel15.setText("$");
+        jPanel1.add(jLabel15);
+        jLabel15.setBounds(120, 30, 30, 16);
+
+        jLabel16.setText("$");
+        jPanel1.add(jLabel16);
+        jLabel16.setBounds(120, 90, 30, 16);
+
+        labelTPagar.setEnabled(false);
+        jPanel1.add(labelTPagar);
+        labelTPagar.setBounds(160, 90, 100, 20);
+
+        labelSubtotal.setEnabled(false);
+        jPanel1.add(labelSubtotal);
+        labelSubtotal.setBounds(160, 30, 100, 20);
+
+        labelImpuesto.setEnabled(false);
+        jPanel1.add(labelImpuesto);
+        labelImpuesto.setBounds(160, 60, 100, 20);
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(20, 220, 360, 130);
+
+        btnCancelar.setText("Cancelar");
+        getContentPane().add(btnCancelar);
+        btnCancelar.setBounds(190, 380, 100, 30);
+
+        btnNuevo.setText("Nuevo");
+        getContentPane().add(btnNuevo);
+        btnNuevo.setBounds(460, 40, 72, 40);
+
+        btnGuardar.setText("Guardar");
+        btnGuardar.setEnabled(false);
+        getContentPane().add(btnGuardar);
+        btnGuardar.setBounds(460, 100, 72, 40);
+
+        btnMostrar.setText("Mostrar");
+        btnMostrar.setEnabled(false);
+        getContentPane().add(btnMostrar);
+        btnMostrar.setBounds(460, 150, 72, 40);
+
+        btnCerrar.setText("Cerrar");
+        btnCerrar.setEnabled(false);
+        getContentPane().add(btnCerrar);
+        btnCerrar.setBounds(320, 380, 100, 30);
+
+        btnLimpiar.setText("Limpiar");
+        getContentPane().add(btnLimpiar);
+        btnLimpiar.setBounds(50, 380, 100, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtFechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtFechaActionPerformed
+
+    private void txtNumReciboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumReciboActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNumReciboActionPerformed
+
+    private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNombreActionPerformed
+
+    private void txtDomicilioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDomicilioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDomicilioActionPerformed
+
+    private void txtConsumidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtConsumidoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtConsumidoActionPerformed
+
+    private void txtCostoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCostoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCostoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +285,37 @@ public class dlgReciboElectricidad extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnCancelar;
+    public javax.swing.JButton btnCerrar;
+    public javax.swing.JButton btnGuardar;
+    public javax.swing.JButton btnLimpiar;
+    public javax.swing.JButton btnMostrar;
+    public javax.swing.JButton btnNuevo;
+    public javax.swing.JComboBox<String> comboTipo;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    public javax.swing.JLabel labelImpuesto;
+    public javax.swing.JLabel labelSubtotal;
+    public javax.swing.JLabel labelTPagar;
+    public javax.swing.JTextField txtConsumido;
+    public javax.swing.JTextField txtCosto;
+    public javax.swing.JTextField txtDomicilio;
+    public javax.swing.JTextField txtFecha;
+    public javax.swing.JTextField txtNombre;
+    public javax.swing.JTextField txtNumRecibo;
     // End of variables declaration//GEN-END:variables
 }
