@@ -115,8 +115,6 @@ public class ReciboElectricidad {
         else{
             return 0;
         }
-        
-        
     }
     
     public float CalcularImpuesto(){
@@ -128,7 +126,5 @@ public class ReciboElectricidad {
         float tpagar;
         return tpagar=(float)(CalcularSubTotal()+CalcularImpuesto());
     }
-    
-    
-    
+
 }
