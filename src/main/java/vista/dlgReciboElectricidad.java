@@ -76,7 +76,7 @@ public class dlgReciboElectricidad extends javax.swing.JFrame {
 
         jLabel4.setText("Domicilio");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(20, 100, 51, 16);
+        jLabel4.setBounds(20, 100, 60, 16);
 
         jLabel5.setText("Tipo de Servicio");
         getContentPane().add(jLabel5);
@@ -124,7 +124,7 @@ public class dlgReciboElectricidad extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtDomicilio);
-        txtDomicilio.setBounds(100, 100, 150, 22);
+        txtDomicilio.setBounds(110, 100, 150, 22);
 
         txtConsumido.setEnabled(false);
         txtConsumido.addActionListener(new java.awt.event.ActionListener() {
