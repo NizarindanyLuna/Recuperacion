@@ -99,7 +99,23 @@ public class ReciboElectricidad {
     
     public float CalcularSubTotal(){
         float subt;
-        return subt = (float)(costoKilow*kilowConsum);
+        
+        if(tipoServicio==1){
+            costoKilow=2;
+           return subt = (float)(costoKilow*kilowConsum); 
+        }
+        else if(tipoServicio==2){
+            costoKilow=3;
+           return subt = (float)(costoKilow*kilowConsum); 
+        }
+        else if(tipoServicio==3){
+            costoKilow=500;
+           return subt = (float)(costoKilow*kilowConsum); 
+        }
+        else{
+            return 0;
+        }
+        
         
     }
     

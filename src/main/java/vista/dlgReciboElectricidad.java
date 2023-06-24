@@ -64,11 +64,11 @@ public class dlgReciboElectricidad extends javax.swing.JFrame {
 
         jLabel1.setText("Nombre");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(20, 60, 44, 16);
+        jLabel1.setBounds(20, 60, 70, 16);
 
         jLabel2.setText("Num. Recibo");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(20, 30, 69, 16);
+        jLabel2.setBounds(20, 30, 90, 16);
 
         jLabel3.setText("kilowatts consumido");
         getContentPane().add(jLabel3);
@@ -80,15 +80,15 @@ public class dlgReciboElectricidad extends javax.swing.JFrame {
 
         jLabel5.setText("Tipo de Servicio");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(20, 130, 83, 16);
+        jLabel5.setBounds(20, 130, 100, 16);
 
         jLabel6.setText("Costo por kilowatts");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(240, 130, 110, 16);
+        jLabel6.setBounds(260, 130, 110, 16);
 
         jLabel7.setText("Fecha");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(240, 30, 31, 16);
+        jLabel7.setBounds(260, 30, 31, 16);
 
         txtFecha.setEnabled(false);
         txtFecha.addActionListener(new java.awt.event.ActionListener() {
@@ -97,7 +97,7 @@ public class dlgReciboElectricidad extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtFecha);
-        txtFecha.setBounds(280, 30, 71, 22);
+        txtFecha.setBounds(300, 30, 71, 22);
 
         txtNumRecibo.setEnabled(false);
         txtNumRecibo.addActionListener(new java.awt.event.ActionListener() {
@@ -106,7 +106,7 @@ public class dlgReciboElectricidad extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtNumRecibo);
-        txtNumRecibo.setBounds(100, 30, 71, 22);
+        txtNumRecibo.setBounds(120, 30, 71, 22);
 
         txtNombre.setEnabled(false);
         txtNombre.addActionListener(new java.awt.event.ActionListener() {
@@ -115,7 +115,7 @@ public class dlgReciboElectricidad extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtNombre);
-        txtNombre.setBounds(80, 60, 150, 22);
+        txtNombre.setBounds(100, 60, 150, 22);
 
         txtDomicilio.setEnabled(false);
         txtDomicilio.addActionListener(new java.awt.event.ActionListener() {
@@ -124,7 +124,7 @@ public class dlgReciboElectricidad extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtDomicilio);
-        txtDomicilio.setBounds(80, 100, 150, 22);
+        txtDomicilio.setBounds(100, 100, 150, 22);
 
         txtConsumido.setEnabled(false);
         txtConsumido.addActionListener(new java.awt.event.ActionListener() {
@@ -133,7 +133,7 @@ public class dlgReciboElectricidad extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtConsumido);
-        txtConsumido.setBounds(140, 170, 71, 22);
+        txtConsumido.setBounds(160, 170, 71, 22);
 
         txtCosto.setEnabled(false);
         txtCosto.addActionListener(new java.awt.event.ActionListener() {
@@ -142,12 +142,12 @@ public class dlgReciboElectricidad extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtCosto);
-        txtCosto.setBounds(350, 130, 71, 22);
+        txtCosto.setBounds(370, 130, 71, 22);
 
-        comboTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        comboTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "Domicilio", "Comercial", "Industrial" }));
         comboTipo.setEnabled(false);
         getContentPane().add(comboTipo);
-        comboTipo.setBounds(110, 130, 120, 22);
+        comboTipo.setBounds(130, 130, 120, 22);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "CALCULOS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Segoe UI", 1, 14))); // NOI18N
         jPanel1.setLayout(null);
@@ -214,7 +214,6 @@ public class dlgReciboElectricidad extends javax.swing.JFrame {
         btnMostrar.setBounds(460, 150, 72, 40);
 
         btnCerrar.setText("Cerrar");
-        btnCerrar.setEnabled(false);
         getContentPane().add(btnCerrar);
         btnCerrar.setBounds(320, 380, 100, 30);
 
